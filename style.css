@@ -1,0 +1,80 @@
+/* ==========================================================================
+   Estilos Principais do Portal (CSS Externo)
+   ========================================================================== */
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #0f172a;
+    color: #f8fafc;
+    line-height: 1.6;
+    padding: 20px;
+}
+
+/* Configuração do Flexbox para as três colunas lado a lado */
+#container-principal {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: stretch;
+    gap: 24px;
+    max-width: 1300px;
+    margin: 0 auto;
+}
+
+/* Estilo base compartilhado por todos os cards */
+.secao-card {
+    flex: 1;
+    min-width: 0;
+    background-color: #1e293b;
+    border-radius: 12px;
+    padding: 24px;
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.4);
+    border: 1px solid #334155;
+    display: flex;
+    flex-direction: column;
+}
+
+/* Padronização dos títulos e imagens */
+.titulo-secao {
+    font-size: 1.75rem;
+    font-weight: 700;
+    color: #38bdf8;
+    margin-bottom: 16px;
+    border-bottom: 2px solid #334155;
+    padding-bottom: 10px;
+}
+
+.imagem-ilustrativa {
+    width: 100%;
+    height: 180px;
+    object-fit: cover;
+    border-radius: 8px;
+    margin-bottom: 12px;
+    border: 2px solid #475569;
+}
+
+.texto-explicativo {
+    font-size: 0.95rem;
+    color: #cbd5e1;
+    margin-bottom: 16px;
+text-align: center; /* Alinha o texto ao centro */
+}
+
+/* ==========================================================================
+   Personalização por ID (Estilos exclusivos para cada seção)
+   ========================================================================== */
+
+/* Detalhes para a seção de Filmes */
+#filmes {
+    border-top: 4px solid #f97316;
+}
+
+/* Detalhes para a seção de Música */
+#musica {
+    border-top: 4px solid #a855f7;
+}
+
+/* Detalhes para a seção de Games */
+#games {
+    border-top: 4px solid #06b6d4;
+}

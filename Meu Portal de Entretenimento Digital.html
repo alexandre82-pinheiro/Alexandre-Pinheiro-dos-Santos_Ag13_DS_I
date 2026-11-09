@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Meu Portal de Entretenimento Digital</title>
+
+    <!-- 1. Vínculo do CSS Reset (Eric Meyer) antes da folha principal -->
+    <link rel="stylesheet" href="reset.css">
+
+    <!-- 2. Vínculo do CSS Externo -->
+    <link rel="stylesheet" href="style.css">
+
+    <!-- 3. CSS Interno (Regras aplicadas no cabeçalho e utilitários) -->
+    <style>
+        /* Estilização do cabeçalho principal via CSS Interno */
+        #cabecalho-portal {
+            text-align: center;
+            padding: 40px 20px;
+            margin-bottom: 30px;
+            background: linear-gradient(135deg, #1e1b4b 0%, #312e81 100%);
+            border-radius: 12px;
+            box-shadow: 0 4px 20px rgba(0, 0, 0, 0.5);
+        }
+
+        /* Estilo do título h1 identificado via ID */
+        #titulo-principal {
+            font-size: 2.5rem;
+            color: #ffffff;
+            font-weight: 800;
+            letter-spacing: 1px;
+            text-transform: uppercase;
+        }
+
+        /* Container flexível para alinhar as imagens de cada coluna */
+        .galeria-imagens {
+            display: flex;
+            flex-direction: column;
+            gap: 8px;
+            margin: 10px 0;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Header usando o ID estilizado no CSS Interno -->
+    <header id="cabecalho-portal">
+        <h1 id="titulo-principal">Meu Portal de Entretenimento Digital</h1>
+    </header>
+
+    <!-- Container Flexbox principal que organiza as 3 seções lado a lado -->
+    <main id="container-principal">
+
+        <!-- SEÇÃO 1: Filmes e Séries (Com ID 'filmes') -->
+        <section id="filmes" class="secao-card">
+            <h2 class="titulo-secao">Filmes e Séries</h2>
+            <p class="texto-explicativo">
+                Explore o universo do cinema e das maratonas com grandes destaques do entretenimento audiovisual.
+            </p>
+            <div class="galeria-imagens">
+                <img class="imagem-ilustrativa" src="Filmes e Séries_2.png" alt="Filmes e Séries - Ação, emoção e grandes histórias">
+            </div>
+            <p class="texto-explicativo">
+                Acompanhe os lançamentos de ficção científica, ação e drama diretamente em um só lugar.
+            </p>
+        </section>
+
+        <!-- SEÇÃO 2: Música e Podcasts (Com ID 'musica') -->
+        <section id="musica" class="secao-card">
+            <!-- Aplicação de CSS INLINE no título da segunda seção -->
+            <h2 class="titulo-secao" style="color: #c084fc; border-bottom-color: #9333ea;">Música e Podcasts</h2>
+            <p class="texto-explicativo">
+                Conecte-se com faixas sonoras marcantes, novos artistas e episódios sobre diversos temas.
+            </p>
+            <div class="galeria-imagens">
+                <img class="imagem-ilustrativa" src="Música e Podcasts_2.png" alt="Música e Podcasts - Ouça e descubra">
+            </div>
+            <p class="texto-explicativo">
+                Monte suas playlists personalizadas e acompanhe os programas mais populares de streaming.
+            </p>
+        </section>
+
+        <!-- SEÇÃO 3: Games e Tecnologia (Com ID 'games') -->
+        <section id="games" class="secao-card">
+            <h2 class="titulo-secao">Games e Tecnologia</h2>
+            <p class="texto-explicativo">
+                Fique por dentro do ecossistema geek, novidades de hardware, realidade virtual e desenvolvimento.
+            </p>
+            <div class="galeria-imagens">
+                <img class="imagem-ilustrativa" src="games e tecnologia_2.png" alt="Games e Tecnologia - Inovação e jogos">
+            </div>
+            <p class="texto-explicativo">
+                Análises detalhadas sobre consoles, avanços em IA e computação em nuvem para entusiastas.
+            </p>
+        </section>
+
+    </main>
+
+</body>
+</html>
